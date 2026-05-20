@@ -87,12 +87,28 @@ grub-mkrescue -o ./mydistro_linux.iso fs       # Create a bootable disk image
 qemu-system-x86_64 -cdrom mydistro_linux.iso   # Run it in a VM
 ```
 
-!!! tip
-    Remember - QEMU is never a copy of real hardware. You should always test on real hardware.
+<div style="border-left:4px solid #42b983; background:#f5f5f5; padding:10px 14px; margin:12px 0; border-radius:4px;">
+  <strong style="display:block; margin-bottom:6px;">Tip</strong>
 
-    QEMU emulates hardware in software, which means its behaviour can differ
-    from real devices in subtle ways. For example, your keyboard might not work on real hardware!
+  <div>
+    Remember - QEMU is never a copy of real hardware. You should always test on real hardware.
+  </div>
+
+  <div style="margin-top:6px;">
+    QEMU emulates hardware in software, which means its behaviour can differ from real devices in subtle ways. For example, the system may blackscreen on real hardware!
+  </div>
+</div>
 
 After you press ENTER on the first option, you will see a kernel panic. That means you did everything you were meant to do correctly.
 
-[Continue](live-system.md){ .md-button .md-button--primary }
+<a href="#/live-system.md" style="
+  display:inline-block;
+  padding:10px 16px;
+  background:#42b983;
+  color:white;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+">
+Creating a Live ISO
+</a>
